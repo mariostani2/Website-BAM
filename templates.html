@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabllonet - BAM AI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><svg viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2" fill="none"
+                        class="loader-circle" />
+                    <path d="M40 15L28 38H40L28 65L52 38H40L52 15L40 15Z" fill="currentColor" class="loader-bolt" />
+                </svg></div>
+            <div class="loader-text">BAM AI</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+    <div id="particles-container"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none" />
+                        <path d="M30 12L22 28H30L22 48L38 28H30L38 12L30 12Z" fill="currentColor" />
+                    </svg></div><span class="logo-text">BAM AI</span>
+            </a>
+            <div class="nav-links"><a href="services.html">Zgjidhjet</a><a href="case-studies.html">Rastet e
+                    Studimit</a><a href="about.html">Rreth Nesh</a><a href="templates.html"
+                    class="active">Shabllonet</a></div>
+            <div class="nav-actions">
+                <div class="language-toggle"><button class="lang-btn active" data-lang="sq">SQ</button><button
+                        class="lang-btn" data-lang="en">EN</button></div><a href="index.html#contact"
+                    class="btn btn-primary btn-glow">Rezervo Thirrje</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content"><a href="services.html">Zgjidhjet</a><a href="case-studies.html">Rastet</a><a
+                href="about.html">Rreth Nesh</a><a href="templates.html">Shabllonet</a></div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-up"><span class="section-tag">SHABLLONET</span>
+                <h1><span>Template </span><span class="accent-text gradient-text">falas</span></h1>
+                <p>Shkarkoni shabllonet tona AI për të filluar menjëherë</p>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <section class="templates-section">
+        <div class="container">
+            <div class="templates-grid">
+                <div class="template-card glass-card scroll-reveal">
+                    <div class="template-icon gradient-bg">📄</div>
+                    <h3>Prompt Templates</h3>
+                    <p>Koleksion i 50+ prompteve të optimizuara për ChatGPT dhe Claude</p>
+                    <div class="template-meta"><span>PDF</span><span>50+ prompts</span></div>
+                    <a href="#" class="btn btn-glass btn-full">Shkarko falas →</a>
+                </div>
+                <div class="template-card glass-card scroll-reveal delay-1">
+                    <div class="template-icon gradient-bg">📊</div>
+                    <h3>AI ROI Calculator</h3>
+                    <p>Spreadsheet për të llogaritur ROI potencial të zgjidhjeve AI</p>
+                    <div class="template-meta"><span>Excel</span><span>Formulas</span></div>
+                    <a href="#" class="btn btn-glass btn-full">Shkarko falas →</a>
+                </div>
+                <div class="template-card glass-card scroll-reveal delay-2">
+                    <div class="template-icon gradient-bg">📋</div>
+                    <h3>AI Readiness Checklist</h3>
+                    <p>Lista kontrolli për të vlerësuar gatishmërinë për AI</p>
+                    <div class="template-meta"><span>PDF</span><span>Checklist</span></div>
+                    <a href="#" class="btn btn-glass btn-full">Shkarko falas →</a>
+                </div>
+                <div class="template-card glass-card scroll-reveal delay-3">
+                    <div class="template-icon gradient-bg">🎯</div>
+                    <h3>AI Strategy Framework</h3>
+                    <p>Framework për të hartuar strategjinë tuaj AI</p>
+                    <div class="template-meta"><span>PDF</span><span>Guide</span></div>
+                    <a href="#" class="btn btn-glass btn-full">Shkarko falas →</a>
+                </div>
+                <div class="template-card glass-card scroll-reveal">
+                    <div class="template-icon gradient-bg">💬</div>
+                    <h3>Chatbot Script Template</h3>
+                    <p>Shabllon për krijimin e skripteve të chatbot-eve</p>
+                    <div class="template-meta"><span>Doc</span><span>Template</span></div>
+                    <a href="#" class="btn btn-glass btn-full">Shkarko falas →</a>
+                </div>
+                <div class="template-card glass-card scroll-reveal delay-1">
+                    <div class="template-icon gradient-bg">📈</div>
+                    <h3>AI Metrics Dashboard</h3>
+                    <p>Template dashboard për të monitoruar performancën AI</p>
+                    <div class="template-meta"><span>Excel</span><span>Dashboard</span></div>
+                    <a href="#" class="btn btn-glass btn-full">Shkarko falas →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass-card scroll-reveal">
+                <h2>Keni nevojë për më shumë?</h2>
+                <p>Kontaktoni për template të personalizuara për nevojat tuaja specifike</p><a href="index.html#contact"
+                    class="btn btn-accent btn-glow">Kontaktoni →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple"><a href="index.html" class="footer-logo">
+                    <div class="logo-icon"><svg viewBox="0 0 60 60">
+                            <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M30 12L22 28H30L22 48L38 28H30L38 12L30 12Z" fill="currentColor" />
+                        </svg></div><span>BAM AI</span>
+                </a>
+                <p>© 2026 BAM AI S.R.L.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg></button>
+    <script src="script.js"></script>
+</body>
+
+</html>

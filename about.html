@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rreth Nesh - Njihuni me ekipin tonë të ekspertëve AI">
+    <title>Rreth Nesh - BAM AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2" class="loader-circle" />
+                    <path d="M40 15L28 38H40L28 65L52 38H40L52 15L40 15Z" fill="currentColor" class="loader-bolt" />
+                </svg>
+            </div>
+            <div class="loader-text">BAM AI</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="particles-container"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" />
+                        <path d="M30 12L22 28H30L22 48L38 28H30L38 12L30 12Z" fill="currentColor" />
+                    </svg>
+                </div>
+                <span class="logo-text">BAM AI</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="services.html" data-i18n="nav.solutions">Zgjidhjet</a>
+                <a href="case-studies.html" data-i18n="nav.caseStudy">Rastet e Studimit</a>
+                <a href="about.html" class="active" data-i18n="nav.about">Rreth Nesh</a>
+                <a href="templates.html" data-i18n="nav.templates">Shabllonet</a>
+            </div>
+            <div class="nav-actions">
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="sq">SQ</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <a href="index.html#contact" class="btn btn-primary btn-glow" data-i18n="nav.bookCall">Rezervo
+                    Thirrje</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="services.html" data-i18n="nav.solutions">Zgjidhjet</a>
+            <a href="case-studies.html" data-i18n="nav.caseStudy">Rastet e Studimit</a>
+            <a href="about.html" data-i18n="nav.about">Rreth Nesh</a>
+            <a href="templates.html" data-i18n="nav.templates">Shabllonet</a>
+            <a href="index.html#contact" class="btn btn-primary" data-i18n="nav.bookCall">Rezervo Thirrje</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-up">
+                <span class="section-tag" data-i18n="about.tag">RRETH NESH</span>
+                <h1>
+                    <span data-i18n="about.title1">Njihuni me</span>
+                    <span class="accent-text gradient-text" data-i18n="about.title2">ekipin tonë</span>
+                </h1>
+                <p data-i18n="about.subtitle">Ekspertë të Inteligjencës Artificiale të dedikuar për suksesin tuaj</p>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="about-mission">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-content scroll-reveal">
+                    <span class="section-tag" data-i18n="about.mission.tag">MISIONI YNË</span>
+                    <h2 data-i18n="about.mission.title">Transformojmë bizneset përmes AI</h2>
+                    <p data-i18n="about.mission.text1">BAM AI u themelua me një vizion të qartë: të bëjmë Inteligjencën
+                        Artificiale të aksesueshme për çdo biznes në Shqipëri dhe më gjerë.</p>
+                    <p data-i18n="about.mission.text2">Ne besojmë se çdo kompani, pavarësisht madhësisë, meriton të
+                        përfitojë nga fuqia e AI për të rritur efikasitetin dhe konkurrueshmërinë.</p>
+                </div>
+                <div class="mission-stats scroll-reveal delay-1">
+                    <div class="mission-stat glass-card">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label" data-i18n="about.mission.stat1">Vite eksperiencë</div>
+                    </div>
+                    <div class="mission-stat glass-card">
+                        <div class="stat-number" data-count="60">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label" data-i18n="about.mission.stat2">Klientë të kënaqur</div>
+                    </div>
+                    <div class="mission-stat glass-card">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label" data-i18n="about.mission.stat3">Ekspertë AI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="about-values">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag" data-i18n="about.values.tag">VLERAT TONA</span>
+                <h2>
+                    <span data-i18n="about.values.title1">Çfarë na</span>
+                    <span class="accent-text gradient-text" data-i18n="about.values.title2">udhëheq</span>
+                </h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card glass-card scroll-reveal">
+                    <div class="value-icon gradient-bg">🎯</div>
+                    <h4 data-i18n="about.values.v1.title">Inovacion</h4>
+                    <p data-i18n="about.values.v1.desc">Gjithmonë në kërkim të zgjidhjeve më të reja dhe më të mira</p>
+                </div>
+                <div class="value-card glass-card scroll-reveal delay-1">
+                    <div class="value-icon gradient-bg">💎</div>
+                    <h4 data-i18n="about.values.v2.title">Cilësi</h4>
+                    <p data-i18n="about.values.v2.desc">Nuk bëjmë kompromis me cilësinë e punës sonë</p>
+                </div>
+                <div class="value-card glass-card scroll-reveal delay-2">
+                    <div class="value-icon gradient-bg">🤝</div>
+                    <h4 data-i18n="about.values.v3.title">Partneritet</h4>
+                    <p data-i18n="about.values.v3.desc">Punojmë me ju si partner, jo thjesht si furnitor</p>
+                </div>
+                <div class="value-card glass-card scroll-reveal delay-3">
+                    <div class="value-icon gradient-bg">🚀</div>
+                    <h4 data-i18n="about.values.v4.title">Rezultate</h4>
+                    <p data-i18n="about.values.v4.desc">Fokusohemi tek rezultatet konkrete dhe ROI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="about-team">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag" data-i18n="about.team.tag">EKIPI</span>
+                <h2>
+                    <span data-i18n="about.team.title1">Njerëzit prapa</span>
+                    <span class="accent-text gradient-text" data-i18n="about.team.title2">BAM AI</span>
+                </h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card glass-card scroll-reveal">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">AK</div>
+                    </div>
+                    <h4>Artan Krasniqi</h4>
+                    <span class="team-role">CEO & Founder</span>
+                    <p data-i18n="about.team.m1.bio">15+ vite eksperiencë në teknologji dhe AI</p>
+                    <div class="team-social">
+                        <a href="#">in</a>
+                        <a href="#">𝕏</a>
+                    </div>
+                </div>
+                <div class="team-card glass-card scroll-reveal delay-1">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">EM</div>
+                    </div>
+                    <h4>Elena Mustafa</h4>
+                    <span class="team-role">CTO</span>
+                    <p data-i18n="about.team.m2.bio">PhD në Machine Learning, 10+ vite R&D</p>
+                    <div class="team-social">
+                        <a href="#">in</a>
+                        <a href="#">𝕏</a>
+                    </div>
+                </div>
+                <div class="team-card glass-card scroll-reveal delay-2">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">BH</div>
+                    </div>
+                    <h4>Besian Hoxha</h4>
+                    <span class="team-role">Head of Product</span>
+                    <p data-i18n="about.team.m3.bio">Ekspert në zhvillimin e produkteve AI</p>
+                    <div class="team-social">
+                        <a href="#">in</a>
+                        <a href="#">𝕏</a>
+                    </div>
+                </div>
+                <div class="team-card glass-card scroll-reveal delay-3">
+                    <div class="team-avatar">
+                        <div class="avatar-placeholder">DL</div>
+                    </div>
+                    <h4>Diana Leka</h4>
+                    <span class="team-role">Head of Operations</span>
+                    <p data-i18n="about.team.m4.bio">Ekspert në optimizimin e proceseve</p>
+                    <div class="team-social">
+                        <a href="#">in</a>
+                        <a href="#">𝕏</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass-card scroll-reveal">
+                <h2 data-i18n="about.cta.title">Gati të filloni?</h2>
+                <p data-i18n="about.cta.text">Le të bisedojmë se si mund t'ju ndihmojmë të transformoni biznesin tuaj
+                </p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-accent btn-glow" data-i18n="about.cta.button1">Rezervo
+                        një konsultim</a>
+                    <a href="case-studies.html" class="btn btn-glass" data-i18n="about.cta.button2">Shiko rastet e
+                        studimit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <a href="index.html" class="footer-logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" />
+                            <path d="M30 12L22 28H30L22 48L38 28H30L38 12L30 12Z" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <span>BAM AI</span>
+                </a>
+                <p>© 2026 BAM AI S.R.L. <span data-i18n="footer.rights">Të gjitha të drejtat e rezervuara.</span></p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg></a>
+                    <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

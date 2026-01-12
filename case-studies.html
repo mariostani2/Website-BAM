@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastet e Studimit - BAM AI</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><svg viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="38" stroke="currentColor" stroke-width="2" fill="none"
+                        class="loader-circle" />
+                    <path d="M40 15L28 38H40L28 65L52 38H40L52 15L40 15Z" fill="currentColor" class="loader-bolt" />
+                </svg></div>
+            <div class="loader-text">BAM AI</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+    <div id="particles-container"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon"><svg viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none" />
+                        <path d="M30 12L22 28H30L22 48L38 28H30L38 12L30 12Z" fill="currentColor" />
+                    </svg></div><span class="logo-text">BAM AI</span>
+            </a>
+            <div class="nav-links"><a href="services.html">Zgjidhjet</a><a href="case-studies.html"
+                    class="active">Rastet e Studimit</a><a href="about.html">Rreth Nesh</a><a
+                    href="templates.html">Shabllonet</a></div>
+            <div class="nav-actions">
+                <div class="language-toggle"><button class="lang-btn active" data-lang="sq">SQ</button><button
+                        class="lang-btn" data-lang="en">EN</button></div><a href="index.html#contact"
+                    class="btn btn-primary btn-glow">Rezervo Thirrje</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></button>
+        </nav>
+    </header>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content"><a href="services.html">Zgjidhjet</a><a href="case-studies.html">Rastet</a><a
+                href="about.html">Rreth Nesh</a><a href="templates.html">Shabllonet</a></div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content animate-fade-up"><span class="section-tag">RASTET E STUDIMIT</span>
+                <h1><span>Histori </span><span class="accent-text gradient-text">suksesi</span></h1>
+                <p>Shikoni rezultatet tona të matshme</p>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <section class="case-study-detail">
+        <div class="container">
+            <div class="case-study-card glass-card scroll-reveal">
+                <div class="case-study-header"><span class="case-category">Automatizim HR</span>
+                    <div class="case-results">
+                        <div class="result-item"><span class="result-number">200+</span><span
+                                class="result-label">orë/muaj</span></div>
+                        <div class="result-item"><span class="result-number">80%</span><span
+                                class="result-label">reduktim</span></div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <div class="case-info">
+                        <h2>Automatizimi i proceseve HR për TechCorp</h2>
+                        <p>Si ndihmuam një kompani me 200+ punonjës të reduktojë punën manuale me 80% dhe të kursejë mbi
+                            200 orë pune çdo muaj.</p><a href="index.html#contact" class="btn btn-accent">Mëso më shumë
+                            →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-detail alt-bg">
+        <div class="container">
+            <div class="case-study-card glass-card scroll-reveal">
+                <div class="case-study-header"><span class="case-category">Chatbot AI</span>
+                    <div class="case-results">
+                        <div class="result-item"><span class="result-number">+150%</span><span
+                                class="result-label">kënaqësi</span></div>
+                        <div class="result-item"><span class="result-number">90%</span><span
+                                class="result-label">auto</span></div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <div class="case-info">
+                        <h2>Chatbot 24/7 për E-Commerce Plus</h2>
+                        <p>Chatbot AI që trajton 90% të pyetjeve automatikisht, rrit kënaqësinë e klientëve me 150%, dhe
+                            ofron suport 24/7.</p><a href="index.html#contact" class="btn btn-accent">Mëso më shumë
+                            →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study-detail">
+        <div class="container">
+            <div class="case-study-card glass-card scroll-reveal">
+                <div class="case-study-header"><span class="case-category">Analitikë</span>
+                    <div class="case-results">
+                        <div class="result-item"><span class="result-number">95%</span><span
+                                class="result-label">saktësi</span></div>
+                        <div class="result-item"><span class="result-number">+25%</span><span
+                                class="result-label">shitje</span></div>
+                    </div>
+                </div>
+                <div class="case-study-content">
+                    <div class="case-info">
+                        <h2>Parashikim shitjesh për Retail Plus</h2>
+                        <p>Model AI me 95% saktësi që parashikon shitjet, optimizon stokun, dhe rriti shitjet me 25%.
+                        </p><a href="index.html#contact" class="btn btn-accent">Mëso më shumë →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content glass-card scroll-reveal">
+                <h2>Dëshironi rezultate të ngjashme?</h2>
+                <p>Filloni konsultimin falas sot</p><a href="index.html#contact"
+                    class="btn btn-accent btn-glow">Kontaktoni →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple"><a href="index.html" class="footer-logo">
+                    <div class="logo-icon"><svg viewBox="0 0 60 60">
+                            <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" fill="none" />
+                            <path d="M30 12L22 28H30L22 48L38 28H30L38 12L30 12Z" fill="currentColor" />
+                        </svg></div><span>BAM AI</span>
+                </a>
+                <p>© 2026 BAM AI S.R.L.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M18 15l-6-6-6 6" />
+        </svg></button>
+    <script src="script.js"></script>
+</body>
+
+</html>
